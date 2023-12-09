@@ -13,7 +13,18 @@
 			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 			<a href="#opere">Opera artistică</a>
 			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-			<a href="#inv">Studii și invenții</a>
+			<!-- <a id="drop" class="drop" href="#inv">Studii și invenții</a> -->		
+			<div id="drptest">
+				  <a href="#inv" class="dropbtn">Studii și invenții</a>
+					  <div class="dropdown-content">
+					    <a href="#auto">Mașina cu autopropulsie</a>
+					    <a href="#surub">Șurubul aerian</a>
+					    <a href="#tun">Tunul cu trei țevi</a>
+					    <a href="#planor">Planorul</a>
+					    <a href="#scafandru">Echipamentul de scafandru</a>
+					    <a href="#pod">Podul rabatant</a>
+					  </div>
+			</div>
 		</div>
 		</div>
 
@@ -26,7 +37,8 @@
 </div>
 
 			<div class="img_div">
-				<img src="img/leo.jpg" class="leo_img" title="Leonardo da Vinci">
+				 <img id="lamp1" class="leo_img"  width="550" height="550" onmouseover="imgChange1('https://media4.giphy.com/media/l3fzBebtPNI1dTlC0/giphy.gif?cid=ecf05e474tl03u56qnfldw7q332lgjwmxsaodwbc72wyoxc1&ep=v1_gifs_search&rid=giphy.gif&ct=g')" onmouseout="imgChange1('img/leo.jpg')" src="img/leo.jpg" height="600" width="700" alt="Lamp turned off" border="0" name="lamp1"></img>
+				<!-- <img src="img/leo.jpg" class="leo_img" title="Leonardo da Vinci"> -->
 			</div>
 		
 </div>
@@ -100,27 +112,27 @@
 					 <a name="inv"></a>
 						<h2>Studii și invenții</h2>
 					<table style="border-radius: 5vw">
-						<tr>
+						<tr id="auto">						
 							<th>Mașina cu autopropulsie</th>
 							<td><img src="img/inv1.jpg" class="img_inv"></td>
 						</tr>
-						<tr>
+						<tr id="surub">						
 							<th>Șurubul aerian</th>
 							<td><img src="img/inv2.jpg" class="img_inv"></td>
 						</tr>
-						<tr>
+						<tr id="tun">
 							<th>Tunul cu trei țevi</th>
 							<td><img src="img/inv3.jpg" class="img_inv"></td>
 						</tr>
-						<tr>
+						<tr id="planor">
 							<th>Planorul</th>
 							<td><img src="img/inv4.jpg" class="img_inv"></td>
 						</tr>
-						<tr>
+						<tr id="scafandru">
 							<th>Echipamentul de scafandru</th>
 							<td><img src="img/inv5.jpg" class="img_inv"></td>
 						</tr>
-						<tr>
+						<tr id="pod">						
 							<th>Podul rabatant</th>
 							<td><img src="img/inv6.jpg" class="img_inv"></td>
 						</tr>
@@ -135,7 +147,7 @@
 			</div>
 
 			<div class="footer">
-			<p>&copy;Realizat de Crys28</p>
+			<p>&copy;Realizat de Iacomachi Cristian</p>
 		</div>
 
 		</div>
@@ -145,5 +157,14 @@
 
 
 	</div>
+
+	<script>
+      function imgChange1( img ) { 
+      	
+      	document.lamp1.src = img; 
+    	
+
+      }
+  </script>
 </body>
 </html>

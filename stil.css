@@ -25,7 +25,32 @@ body{
 	justify-content: center;
 	position: fixed;
 	z-index: 1;
+
 }
+
+.dropdown {
+/*  position: relative;
+  display: inline-block;*/
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gold;
+/*  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*  z-index: 1;*/
+  font-size: 1vw;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#drptest:hover .dropdown-content {display: block;}
 
 a{
 	text-decoration: none;
@@ -49,11 +74,12 @@ display: flex;
 .title{
 font-size: 4vw;
 text-shadow: 1px 1px 5px white, 0 0 1em black, 0 0 0.2em darkred;
+transition-duration: 0.5s;
 }
 
 .title:hover{
 	color: darkred;
-	transition-duration: 1s;
+
 	cursor: pointer;
 }
 
@@ -152,12 +178,13 @@ display: inline-block;
 }
 
 h2{
-	font-size: 5vw;color: white;width: 50vw;
+	font-size: 5vw;color: black;width: 50vw;
 	height: 10vw;
+	transition-duration: 1s;
 }
 
 h2:hover{
-	transition: 2s ease;
+/*	transition: 2s ease;*/
 	transform: translate(20%,0);
 	color: darkred;
 }
@@ -194,6 +221,15 @@ table,tr,th,td{
 
 .tabel{
 	margin-bottom: 2%;
+
+}
+
+.tabel img{
+	transition-duration: 0.5s;
+}
+
+.tabel img:hover{
+	transform: scale(1.5);
 }
 
 .footer{
